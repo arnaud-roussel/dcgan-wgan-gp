@@ -27,7 +27,7 @@ D = Discriminator().to(device)
 d_loss = D_loss().to(device)
 g_loss = G_loss().to(device)
 
-optim_D = torch.optim.Adam(D.parameters(), lr=1e-4, betas=(0.5, 0.999))
+optim_D = torch.optim.Adam(D.parameters(), lr=1e-5, betas=(0.5, 0.999))
 optim_G = torch.optim.Adam(G.parameters(), lr=1e-4, betas=(0.5, 0.999))
 
 d_count = 0
